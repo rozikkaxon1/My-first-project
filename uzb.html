@@ -1,127 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sign in  1- Google</title>
+  <title>Google hisobingizga kirish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background: #f2f2f2;
+    /* Google’ning asosiy shriftini yuklaymiz */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    * {
       margin: 0;
       padding: 0;
-    }
-
-    .login-container {
-      max-width: 400px;
-      margin: 80px auto;
-      background: #fff;
-      padding: 40px 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .google-logo {
-      display: block;
-      margin: 0 auto 20px;
-      width: 75px;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-align: center;
-      color: #202124;
-    }
-
-    p.subtitle {
-      font-size: 16px;
-      color: #5f6368;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #dadce0;
-      border-radius: 4px;
-      font-size: 16px;
       box-sizing: border-box;
     }
 
-    .login-footer {
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f1f3f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #202124;
+    }
+
+    .login-container {
+      background-color: white;
+      width: 360px;
+      padding: 48px 32px 32px;
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    }
+
+    img.google-logo {
+      display: block;
+      margin: 0 auto 24px;
+      width: 75px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #5f6368;
+      text-align: center;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      margin-bottom: 24px;
+      outline: none;
+    }
+
+    input[type="email"]:focus {
+      border-color: #1a73e8;
+      box-shadow: 0 0 0 1px #1a73e8;
+    }
+
+    .buttons {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 30px;
     }
 
-    .forgot {
+    .learn {
+      font-size: 14px;
       color: #1a73e8;
       text-decoration: none;
-      font-size: 14px;
     }
 
-    .forgot:hover {
+    .learn:hover {
       text-decoration: underline;
     }
 
-    button {
+    button.next-btn {
       background-color: #1a73e8;
       color: white;
       border: none;
       padding: 10px 24px;
       font-size: 14px;
+      font-weight: 500;
       border-radius: 4px;
       cursor: pointer;
     }
 
-    button:hover {
-      background-color: #1669c1;
+    button.next-btn:hover {
+      background: #1669c1;
     }
 
-    .create-account {
-      margin-top: 40px;
+    .create {
       text-align: center;
-    }
-
-    .create-account a {
-      color: #1a73e8;
-      text-decoration: none;
+      margin-top: 32px;
       font-size: 14px;
     }
 
-    .create-account a:hover {
+    .create a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .create a:hover {
       text-decoration: underline;
     }
 
+    @media (max-width: 400px) {
+      .login-container {
+        width: 90%;
+        padding: 32px 20px;
+      }
+    }
   </style>
 </head>
 <body>
-
   <div class="login-container">
-    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
-
-    <h1>Sign in</h1>
-    <p class="subtitle">to continue to Gmail</p>
-
+    <img class="google-logo"
+         src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+         alt="Google">
+    <h2>Hisob qaydnomangizga kirish</h2>
+    <p class="subtitle">Google hisobingizni ishlatish uchun tizimga kiring</p>
     <form>
-      <input type="email" placeholder="Email or phone" required>
-      <input type="password" placeholder="Enter your password" required>
-
-      <div class="login-footer">
-        <a href="#" class="forgot">Forgot email?</a>
-        <button type="submit">Next</button>
+      <input type="email" placeholder="Email yoki telefon" required>
+      <div class="buttons">
+        <a href="#" class="learn">Xavotirlandingizmi?</a>
+        <button type="submit" class="next-btn">Keyingi</button>
       </div>
     </form>
-
-    <div class="create-account">
-      <a href="#">Create account</a>
+    <div class="create">
+      <p>Yangi foydalanuvchi? <a href="#">Hisob qaydnomasini yarating</a></p>
     </div>
   </div>
-
 </body>
 </html>
