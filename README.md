@@ -1,2 +1,3 @@
 # My-first-project
-Bu mening birinchi loyiham!
+
+Bu Githubdagi birinchi loyiham!
